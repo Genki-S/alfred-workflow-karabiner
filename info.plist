@@ -7,7 +7,19 @@
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>CCB8DD82-164E-46D1-BF4A-76FA6AD86FA1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0B0838D3-20BC-448F-BE66-BD2BE8DA0043</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string>Genki Sugimoto (@Genki-S)</string>
 	<key>description</key>
@@ -17,11 +29,79 @@
 	<key>name</key>
 	<string>Karabiner</string>
 	<key>objects</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>karabiner</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Obtaining available profiles...</string>
+				<key>script</key>
+				<string>ruby main.rb "{query}"</string>
+				<key>subtext</key>
+				<string>Switch Karabiner profile</string>
+				<key>title</key>
+				<string>Karabiner Profile Switcher</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>CCB8DD82-164E-46D1-BF4A-76FA6AD86FA1</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>ruby switch.rb "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0B0838D3-20BC-448F-BE66-BD2BE8DA0043</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
-	<dict/>
+	<dict>
+		<key>0B0838D3-20BC-448F-BE66-BD2BE8DA0043</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>CCB8DD82-164E-46D1-BF4A-76FA6AD86FA1</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
 	<key>webaddress</key>
 	<string></string>
 </dict>
