@@ -1,6 +1,6 @@
 require_relative './karabiner'
 
-query = ARGV.first
+query = ARGV.first.to_s.strip
 karabiner = Karabiner.new
 profiles = karabiner.run('list').chomp.split("\n")
 

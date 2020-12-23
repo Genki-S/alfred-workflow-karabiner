@@ -1,7 +1,11 @@
 class Karabiner
-  EXE = '/Applications/Karabiner.app/Contents/Library/bin/karabiner'
+  EXE = '/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli'
 
   def run(*cmds)
-    `#{EXE} #{cmds.join(' ')}`
+    `'#{EXE}' --list-profile-names #{cmds.join(' ')}`
+  end
+
+  def switch(profile)
+    `'#{EXE}' --select-profile '#{profile}'`
   end
 end
